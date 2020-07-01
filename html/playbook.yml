@@ -1,0 +1,41 @@
+- hosts: all
+
+    tasks:
+    - name: tear down existing services
+        docker_compose:
+        project_src: .
+        state: absent
+
+    - name: create a new extensions volume
+        docker_volume:
+        name: sonarqube_extensions_v8
+
+    - name: copying old plugins to new volume
+        copy:
+        src: /data/docker/volumes/sonarqube_extensions_v7/_data/plugins
+        dest: /data/docker/volumes/sonarqube_extensions_v8/_data
+
+    - name: deploying services with new sonar image and extensions volume
+        environment:
+        SONAR_IMAGE: sonarqube:8.3.1-community
+        SONAR_EXTENSIONS_VOLUME: sonarqube_extensions_v8
+        docker_compose:
+        project_src: .
+
+    - name: modifying permissions
+        file:
+        path: /data/docker/volumes/sonarqube_extensions_v8
+        mode: '777'
+        recurse: yes
+
+
+    - name: go to setup page for migrating database
+        uri:
+        url: http://jgerges/sonar/setup
+        method: GET
+        register: _result
+        until: _result.status == 200
+        retries: 720
+        delay: 5
+    
+
