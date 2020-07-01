@@ -1,0 +1,406 @@
+2020.06.30 06:24:07 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 06:24:07 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 06:24:07 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch -Epath.conf=/opt/sonarqube/temp/conf/es
+2020.06.30 06:24:07 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 06:24:08 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 06:24:08 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 06:24:18 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 06:24:18 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.security.egd=file:/dev/./urandom -cp ./lib/common/*:./lib/server/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.1.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process477536726748391704properties
+2020.06.30 06:24:43 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2020.06.30 06:24:43 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*:./lib/server/*:./lib/ce/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.1.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process3071067201301695799properties
+2020.06.30 06:24:46 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2020.06.30 06:24:46 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2020.06.30 06:26:00 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2020.06.30 06:26:02 INFO  app[][o.s.a.SchedulerImpl] Process [ce] is stopped
+2020.06.30 06:26:05 INFO  app[][o.s.a.SchedulerImpl] Process [web] is stopped
+2020.06.30 06:26:05 INFO  app[][o.s.a.SchedulerImpl] Process [es] is stopped
+2020.06.30 06:26:05 WARN  app[][o.s.a.p.AbstractProcessMonitor] Process exited with exit value [es]: 143
+2020.06.30 06:26:05 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+2020.06.30 06:29:23 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 06:29:23 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 06:29:23 INFO  app[][o.s.a.ProcessLauncherImpl] Deleting outdated search index data directory /opt/sonarqube/data/es5
+2020.06.30 06:29:23 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 06:29:23 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 06:29:23 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 06:29:23 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 06:29:36 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 06:29:36 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /usr/local/openjdk-11/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.security.egd=file:/dev/./urandom -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.5.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process5943482453248567929properties
+2020.06.30 06:30:33 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2020.06.30 06:30:33 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2020.06.30 06:30:33 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 06:30:33 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+2020.06.30 06:33:56 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 06:33:56 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 06:33:56 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 06:33:56 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 06:33:57 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 06:33:57 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 06:34:11 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 06:34:11 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /usr/local/openjdk-11/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.security.egd=file:/dev/./urandom -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.5.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process12988622855123556502properties
+2020.06.30 06:34:46 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2020.06.30 06:34:46 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /usr/local/openjdk-11/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.5.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process12206231021064763908properties
+2020.06.30 06:34:50 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2020.06.30 06:34:50 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2020.06.30 06:36:28 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2020.06.30 06:36:28 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2020.06.30 06:36:29 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2020.06.30 06:36:29 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2020.06.30 06:36:29 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 06:36:29 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+2020.06.30 06:37:50 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 06:37:50 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 06:37:50 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 06:37:50 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 06:37:51 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 06:37:51 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 06:38:08 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 06:38:08 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process14325689457183110312properties
+2020.06.30 06:39:27 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2020.06.30 06:39:27 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process12748107477610363571properties
+2020.06.30 06:39:32 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2020.06.30 06:39:32 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2020.06.30 06:41:54 INFO  app[][o.s.a.SchedulerImpl] SQ restart requested by Process[web]
+2020.06.30 06:41:55 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2020.06.30 06:41:57 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2020.06.30 06:41:57 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2020.06.30 06:41:57 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 06:41:57 INFO  app[][o.s.a.SchedulerImpl] SonarQube is restarting
+2020.06.30 06:41:57 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 06:41:57 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 06:41:57 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 06:41:57 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 06:41:57 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 06:41:57 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 06:42:06 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 06:42:06 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process2691608446907188329properties
+2020.06.30 06:42:39 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2020.06.30 06:42:39 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process9958806857388387028properties
+2020.06.30 06:42:45 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2020.06.30 06:42:45 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2020.06.30 06:43:01 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2020.06.30 06:43:02 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2020.06.30 06:43:04 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2020.06.30 06:43:04 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2020.06.30 06:43:04 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 06:43:04 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+2020.06.30 06:45:16 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 06:45:16 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 06:45:16 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 06:45:16 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 06:45:17 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 06:45:17 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 06:45:20 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 1
+2020.06.30 06:45:20 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 06:45:20 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+2020.06.30 06:46:03 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 06:46:03 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 06:46:03 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 06:46:03 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 06:46:03 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 06:46:03 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 06:46:21 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 06:46:21 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /usr/local/openjdk-11/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.security.egd=file:/dev/./urandom -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.5.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process6181876963954271652properties
+2020.06.30 06:46:30 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2020.06.30 06:46:30 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2020.06.30 06:46:30 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 06:46:30 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+2020.06.30 06:49:48 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 06:49:48 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 06:49:48 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 06:49:48 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 06:49:49 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 06:49:49 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 06:50:07 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 06:50:07 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /usr/local/openjdk-11/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.security.egd=file:/dev/./urandom -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.5.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process13476672880371768402properties
+2020.06.30 06:50:42 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2020.06.30 06:50:42 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /usr/local/openjdk-11/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.5.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process662922651952627656properties
+2020.06.30 06:50:46 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2020.06.30 06:50:46 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2020.06.30 06:52:08 INFO  app[][o.s.a.SchedulerImpl] SQ restart requested by Process[web]
+2020.06.30 06:52:08 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2020.06.30 06:52:10 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2020.06.30 06:52:10 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 06:52:10 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2020.06.30 06:52:10 INFO  app[][o.s.a.SchedulerImpl] SonarQube is restarting
+2020.06.30 06:52:10 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 06:52:10 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 06:52:10 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 06:52:10 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 06:52:10 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 06:52:19 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 06:52:19 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /usr/local/openjdk-11/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.security.egd=file:/dev/./urandom -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.5.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process16894169049749722638properties
+2020.06.30 06:52:32 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2020.06.30 06:52:32 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /usr/local/openjdk-11/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.5.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process13429512630035026874properties
+2020.06.30 06:52:36 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2020.06.30 06:52:36 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2020.06.30 06:59:13 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 06:59:13 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 06:59:13 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 06:59:13 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 06:59:14 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 06:59:14 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 06:59:33 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 06:59:33 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process227648664532385293properties
+2020.06.30 07:00:24 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2020.06.30 07:00:24 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process16702488298304273729properties
+2020.06.30 07:00:28 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2020.06.30 07:00:28 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2020.06.30 07:07:21 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2020.06.30 07:07:21 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2020.06.30 07:07:23 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2020.06.30 07:07:23 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2020.06.30 07:07:23 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 07:07:23 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+2020.06.30 07:07:40 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 07:07:40 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 07:07:40 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 07:07:40 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 07:07:41 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 07:07:41 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 07:07:58 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 07:07:58 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process5754633326217616922properties
+2020.06.30 07:08:13 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2020.06.30 07:08:13 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process11712052936701272836properties
+2020.06.30 07:08:18 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2020.06.30 07:08:18 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2020.06.30 07:10:58 INFO  app[][o.s.a.SchedulerImpl] SQ restart requested by Process[web]
+2020.06.30 07:10:59 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2020.06.30 07:10:59 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2020.06.30 07:11:00 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2020.06.30 07:11:00 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 07:11:00 INFO  app[][o.s.a.SchedulerImpl] SonarQube is restarting
+2020.06.30 07:11:00 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 07:11:00 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 07:11:00 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 07:11:00 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 07:11:00 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 07:11:00 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 07:11:08 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 07:11:08 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process255924367897767145properties
+2020.06.30 07:11:19 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2020.06.30 07:11:19 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2020.06.30 07:11:19 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 07:11:19 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+2020.06.30 07:21:20 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 07:21:20 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 07:21:20 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 07:21:20 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 07:21:20 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 07:21:20 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 07:21:29 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 07:21:29 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process15498077087886296577properties
+2020.06.30 07:21:40 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2020.06.30 07:21:40 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 07:21:40 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2020.06.30 07:21:40 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+2020.06.30 07:24:03 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 07:24:03 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 07:24:03 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 07:24:03 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 07:24:04 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 07:24:04 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 07:24:21 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 07:24:21 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process734833810721574925properties
+2020.06.30 07:25:06 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2020.06.30 07:25:06 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process6938891108135246199properties
+2020.06.30 07:25:12 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2020.06.30 07:25:12 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2020.06.30 07:54:10 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2020.06.30 07:54:11 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2020.06.30 07:54:13 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2020.06.30 07:54:13 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2020.06.30 07:54:13 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 07:54:13 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+2020.06.30 07:54:41 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 07:54:41 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 07:54:41 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 07:54:41 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 07:54:42 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 07:54:42 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 07:54:59 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 07:54:59 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process10073738209387849145properties
+2020.06.30 07:55:30 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2020.06.30 07:55:30 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process12265401356969136030properties
+2020.06.30 07:55:36 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2020.06.30 07:55:36 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2020.06.30 07:56:11 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2020.06.30 07:56:12 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2020.06.30 07:56:14 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2020.06.30 07:56:14 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 07:56:14 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+2020.06.30 07:56:14 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2020.06.30 07:56:31 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 07:56:32 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 07:56:32 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 07:56:32 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 07:56:32 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 07:56:32 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 07:56:50 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 07:56:50 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process13372072141981770774properties
+2020.06.30 07:57:20 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2020.06.30 07:57:20 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process8750546101115806305properties
+2020.06.30 07:57:26 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2020.06.30 07:57:26 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2020.06.30 09:31:31 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2020.06.30 09:31:32 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2020.06.30 09:31:32 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2020.06.30 09:31:32 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2020.06.30 09:31:32 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 09:31:32 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+2020.06.30 09:32:53 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 09:32:53 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 09:32:53 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 09:32:53 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 09:32:53 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 09:32:53 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 09:33:05 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 09:33:05 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process13949957559960512558properties
+2020.06.30 09:33:45 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2020.06.30 09:33:45 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process786951281757132703properties
+2020.06.30 09:33:51 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2020.06.30 09:33:51 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2020.06.30 09:56:45 INFO  app[][o.s.a.SchedulerImpl] SQ restart requested by Process[web]
+2020.06.30 09:56:45 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2020.06.30 09:56:46 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2020.06.30 09:56:46 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 09:56:46 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2020.06.30 09:56:46 INFO  app[][o.s.a.SchedulerImpl] SonarQube is restarting
+2020.06.30 09:56:46 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 09:56:46 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 09:56:46 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 09:56:46 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 09:56:46 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 09:56:46 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 09:56:55 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 09:56:55 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process2273838515200135949properties
+2020.06.30 09:57:16 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2020.06.30 09:57:16 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process12011002230038092261properties
+2020.06.30 09:57:19 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2020.06.30 09:57:19 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2020.06.30 10:03:55 INFO  app[][o.s.a.SchedulerImpl] SQ restart requested by Process[web]
+2020.06.30 10:03:56 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2020.06.30 10:03:57 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2020.06.30 10:03:57 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2020.06.30 10:03:57 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 10:03:57 INFO  app[][o.s.a.SchedulerImpl] SonarQube is restarting
+2020.06.30 10:03:57 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 10:03:57 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 10:03:57 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 10:03:57 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 10:03:57 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 10:03:57 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 10:04:06 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 10:04:06 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process3845753729201753558properties
+2020.06.30 10:04:24 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2020.06.30 10:04:24 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process646363893243150894properties
+2020.06.30 10:04:28 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2020.06.30 10:04:28 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2020.06.30 10:49:07 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2020.06.30 10:49:07 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2020.06.30 10:49:08 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2020.06.30 10:49:08 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 10:49:08 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+2020.06.30 10:49:08 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2020.06.30 10:50:12 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 10:50:12 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 10:50:12 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch -Epath.conf=/opt/sonarqube/temp/conf/es
+2020.06.30 10:50:13 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 10:50:14 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 10:50:14 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 10:50:24 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 10:50:24 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.security.egd=file:/dev/./urandom -cp ./lib/common/*:./lib/server/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.1.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process8287309076217347706properties
+2020.06.30 10:50:44 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2020.06.30 10:50:44 INFO  app[][o.s.a.p.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -cp ./lib/common/*:./lib/server/*:./lib/ce/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.1.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process1555763055624561203properties
+2020.06.30 10:50:47 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2020.06.30 10:50:47 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2020.06.30 10:54:40 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2020.06.30 10:54:43 INFO  app[][o.s.a.SchedulerImpl] Process [ce] is stopped
+2020.06.30 10:54:47 INFO  app[][o.s.a.SchedulerImpl] Process [web] is stopped
+2020.06.30 10:54:47 INFO  app[][o.s.a.SchedulerImpl] Process [es] is stopped
+2020.06.30 10:54:47 WARN  app[][o.s.a.p.AbstractProcessMonitor] Process exited with exit value [es]: 143
+2020.06.30 10:54:47 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+2020.06.30 10:55:53 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 10:55:53 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 10:55:53 INFO  app[][o.s.a.ProcessLauncherImpl] Deleting outdated search index data directory /opt/sonarqube/data/es5
+2020.06.30 10:55:54 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 10:55:54 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 10:55:55 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 10:55:55 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 10:56:16 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 10:56:16 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /usr/local/openjdk-11/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.security.egd=file:/dev/./urandom -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.5.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process7873891524130624613properties
+2020.06.30 10:57:11 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2020.06.30 10:57:11 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /usr/local/openjdk-11/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.5.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process6694333217359897888properties
+2020.06.30 10:57:15 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2020.06.30 10:57:15 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2020.06.30 10:57:54 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2020.06.30 10:57:55 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2020.06.30 10:57:55 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2020.06.30 10:57:55 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2020.06.30 10:57:55 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 10:57:55 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+2020.06.30 10:58:17 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 10:58:17 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 10:58:17 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 10:58:17 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 10:58:17 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 10:58:17 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 10:58:35 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 10:58:35 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /usr/local/openjdk-11/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Djava.security.egd=file:/dev/./urandom -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.5.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process6450213893322877089properties
+2020.06.30 10:58:56 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2020.06.30 10:58:56 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /usr/local/openjdk-11/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.5.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process803306235717244468properties
+2020.06.30 10:59:00 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2020.06.30 10:59:00 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2020.06.30 11:04:18 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2020.06.30 11:04:19 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2020.06.30 11:04:19 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2020.06.30 11:04:19 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2020.06.30 11:04:19 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 11:04:19 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+2020.06.30 11:04:24 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 11:04:24 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 11:04:24 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 11:04:24 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 11:04:25 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 11:04:25 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 11:04:36 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 11:04:36 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process927037071674868777properties
+2020.06.30 11:05:37 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2020.06.30 11:05:37 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process3981102116766472594properties
+2020.06.30 11:05:41 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2020.06.30 11:05:41 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2020.06.30 12:23:13 INFO  app[][o.s.a.SchedulerImpl] SQ restart requested by Process[web]
+2020.06.30 12:23:13 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2020.06.30 12:23:14 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2020.06.30 12:23:14 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2020.06.30 12:23:14 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 12:23:14 INFO  app[][o.s.a.SchedulerImpl] SonarQube is restarting
+2020.06.30 12:23:14 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 12:23:15 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 12:23:15 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 12:23:15 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 12:23:15 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 12:23:15 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 12:23:24 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 12:23:24 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process3543701295629871012properties
+2020.06.30 12:23:37 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2020.06.30 12:23:37 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process2918454562428750638properties
+2020.06.30 12:23:41 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2020.06.30 12:23:41 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2020.06.30 12:50:36 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2020.06.30 12:50:37 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2020.06.30 12:50:37 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2020.06.30 12:50:37 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 143
+2020.06.30 12:50:37 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2020.06.30 12:50:37 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+2020.06.30 12:52:09 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory /opt/sonarqube/temp
+2020.06.30 12:52:09 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on /127.0.0.1:9001
+2020.06.30 12:52:09 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [/opt/sonarqube/elasticsearch]: /opt/sonarqube/elasticsearch/bin/elasticsearch
+2020.06.30 12:52:10 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+2020.06.30 12:52:10 INFO  app[][o.e.p.PluginsService] no modules loaded
+2020.06.30 12:52:10 INFO  app[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 12:52:28 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2020.06.30 12:52:28 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.server.app.WebServer /opt/sonarqube/temp/sq-process14163235891010983853properties
+2020.06.30 12:52:50 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2020.06.30 12:52:50 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/postgresql/postgresql-42.2.11.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process12035135193396629456properties
+2020.06.30 12:52:55 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2020.06.30 12:52:55 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up

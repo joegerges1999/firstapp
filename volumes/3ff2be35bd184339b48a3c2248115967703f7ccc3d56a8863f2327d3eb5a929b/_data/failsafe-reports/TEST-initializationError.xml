@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="1" skipped="0" tests="1" time="0.006" failures="0" name="initializationError"><properties></properties><testcase classname="initializationError" time="0.006" name="initializationError"><failure type="org.junit.runners.model.InitializationError" message="null"></failure></testcase></testsuite>
