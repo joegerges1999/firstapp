@@ -1,0 +1,583 @@
+2020.06.30 06:24:43 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2020.06.30 06:24:43 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2020.06.30 06:24:44 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2020.06.30 06:24:44 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020.06.30 06:24:44 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020.06.30 06:24:44 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020.06.30 06:24:44 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 06:24:44 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2020.06.30 06:24:44 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:postgresql://sonardb:5432/sonar
+2020.06.30 06:24:45 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2020.06.30 06:24:45 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2020.06.30 06:24:46 INFO  ce[][o.s.c.c.CePluginRepository] Loaded plugin SonarC# [csharp]
+2020.06.30 06:24:46 INFO  ce[][o.s.c.c.CePluginRepository] Loaded plugin SonarPython [python]
+2020.06.30 06:24:46 INFO  ce[][o.s.c.c.CePluginRepository] Loaded plugin SonarJava [java]
+2020.06.30 06:24:46 INFO  ce[][o.s.c.c.CePluginRepository] Loaded plugin Flex [flex]
+2020.06.30 06:24:46 INFO  ce[][o.s.c.c.CePluginRepository] Loaded plugin SonarQube :: Plugins :: SCM :: Git [scmgit]
+2020.06.30 06:24:46 INFO  ce[][o.s.c.c.CePluginRepository] Loaded plugin SonarXML [xml]
+2020.06.30 06:24:46 INFO  ce[][o.s.c.c.CePluginRepository] Loaded plugin SonarPHP [php]
+2020.06.30 06:24:46 INFO  ce[][o.s.c.c.CePluginRepository] Loaded plugin SonarTS [typescript]
+2020.06.30 06:24:46 INFO  ce[][o.s.c.c.CePluginRepository] Loaded plugin SonarQube :: Plugins :: SCM :: SVN [scmsvn]
+2020.06.30 06:24:46 INFO  ce[][o.s.c.c.CePluginRepository] Loaded plugin SonarJS [javascript]
+2020.06.30 06:24:46 INFO  ce[][o.s.c.q.PurgeCeActivities] Delete the Compute Engine tasks created before Thu Jan 02 06:24:46 UTC 2020
+2020.06.30 06:24:46 INFO  ce[][o.s.c.q.PurgeCeActivities] Delete the Scanner contexts tasks created before Tue Jun 02 06:24:46 UTC 2020
+2020.06.30 06:24:46 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2020.06.30 06:26:00 INFO  ce[][o.s.p.StopWatcher] Stopping process
+2020.06.30 06:26:00 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2020.06.30 06:26:00 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Waiting for workers to finish in-progress tasks
+2020.06.30 06:26:01 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2020.06.30 06:34:46 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2020.06.30 06:34:46 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2020.06.30 06:34:47 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2020.06.30 06:34:47 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020.06.30 06:34:47 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020.06.30 06:34:47 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 06:34:48 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2020.06.30 06:34:48 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:postgresql://sonardb:5432/sonar
+2020.06.30 06:34:49 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2020.06.30 06:34:49 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2020.06.30 06:34:49 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2020.06.30 06:34:49 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2020.06.30 06:36:28 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2020.06.30 06:36:28 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2020.06.30 06:36:28 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2020.06.30 06:36:28 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2020.06.30 06:39:27 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2020.06.30 06:39:27 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2020.06.30 06:39:27 INFO  ce[][o.s.c.e.CoreExtensionsLoader] Loaded core extensions: developer-edition, developer-scanner, developer-server, license
+2020.06.30 06:39:28 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2020.06.30 06:39:28 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020.06.30 06:39:28 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020.06.30 06:39:28 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 06:39:29 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2020.06.30 06:39:29 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:postgresql://sonardb:5432/sonar
+2020.06.30 06:39:30 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2020.06.30 06:39:30 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2020.06.30 06:39:31 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Developer edition
+2020.06.30 06:39:31 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2020.06.30 06:41:54 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2020.06.30 06:41:54 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2020.06.30 06:41:54 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2020.06.30 06:41:55 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2020.06.30 06:42:40 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2020.06.30 06:42:40 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2020.06.30 06:42:40 INFO  ce[][o.s.c.e.CoreExtensionsLoader] Loaded core extensions: developer-edition, developer-scanner, developer-server, license
+2020.06.30 06:42:40 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2020.06.30 06:42:40 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020.06.30 06:42:40 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020.06.30 06:42:40 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 06:42:41 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2020.06.30 06:42:41 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:postgresql://sonardb:5432/sonar
+2020.06.30 06:42:42 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2020.06.30 06:42:42 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2020.06.30 06:42:42 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nzh] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 06:42:42 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nfr] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 06:42:42 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nde] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 06:42:42 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nel] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 06:42:42 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nit] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 06:42:42 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nja] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 06:42:42 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nko] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 06:42:43 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin German Pack [l10nde] should package its dependencies.
+2020.06.30 06:42:43 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin Japanese Pack [l10nja] should package its dependencies.
+2020.06.30 06:42:43 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin Italian Pack [l10nit] should package its dependencies.
+2020.06.30 06:42:43 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin Greek Pack [l10nel] should package its dependencies.
+2020.06.30 06:42:45 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Developer edition
+2020.06.30 06:42:45 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2020.06.30 06:43:01 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2020.06.30 06:43:01 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2020.06.30 06:43:01 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2020.06.30 06:43:02 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2020.06.30 06:50:43 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2020.06.30 06:50:43 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2020.06.30 06:50:43 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2020.06.30 06:50:43 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020.06.30 06:50:43 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020.06.30 06:50:43 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 06:50:44 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2020.06.30 06:50:44 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:postgresql://sonardb:5432/sonar
+2020.06.30 06:50:45 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2020.06.30 06:50:45 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2020.06.30 06:50:46 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2020.06.30 06:50:46 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2020.06.30 06:52:08 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2020.06.30 06:52:08 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2020.06.30 06:52:08 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2020.06.30 06:52:08 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2020.06.30 06:52:32 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2020.06.30 06:52:32 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2020.06.30 06:52:33 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2020.06.30 06:52:33 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020.06.30 06:52:33 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020.06.30 06:52:33 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 06:52:34 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2020.06.30 06:52:34 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:postgresql://sonardb:5432/sonar
+2020.06.30 06:52:35 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2020.06.30 06:52:35 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2020.06.30 06:52:35 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2020.06.30 06:52:36 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2020.06.30 07:00:25 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2020.06.30 07:00:25 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2020.06.30 07:00:25 INFO  ce[][o.s.c.e.CoreExtensionsLoader] Loaded core extensions: developer-edition, developer-scanner, developer-server, license
+2020.06.30 07:00:25 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2020.06.30 07:00:25 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020.06.30 07:00:25 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020.06.30 07:00:25 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 07:00:26 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2020.06.30 07:00:26 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:postgresql://sonardb:5432/sonar
+2020.06.30 07:00:27 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2020.06.30 07:00:27 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2020.06.30 07:00:28 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Developer edition
+2020.06.30 07:00:28 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2020.06.30 07:07:21 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2020.06.30 07:07:21 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2020.06.30 07:07:21 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2020.06.30 07:07:21 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2020.06.30 07:08:13 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2020.06.30 07:08:13 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2020.06.30 07:08:14 INFO  ce[][o.s.c.e.CoreExtensionsLoader] Loaded core extensions: developer-edition, developer-scanner, developer-server, license
+2020.06.30 07:08:14 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2020.06.30 07:08:14 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020.06.30 07:08:14 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020.06.30 07:08:14 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 07:08:15 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2020.06.30 07:08:15 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:postgresql://sonardb:5432/sonar
+2020.06.30 07:08:17 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2020.06.30 07:08:17 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2020.06.30 07:08:18 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Developer edition
+2020.06.30 07:08:18 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2020.06.30 07:10:58 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2020.06.30 07:10:58 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2020.06.30 07:10:58 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2020.06.30 07:10:59 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2020.06.30 07:25:06 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2020.06.30 07:25:06 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2020.06.30 07:25:07 INFO  ce[][o.s.c.e.CoreExtensionsLoader] Loaded core extensions: developer-edition, developer-scanner, developer-server, license
+2020.06.30 07:25:07 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2020.06.30 07:25:07 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020.06.30 07:25:07 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020.06.30 07:25:07 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 07:25:08 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2020.06.30 07:25:08 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:postgresql://sonardb:5432/sonar
+2020.06.30 07:25:09 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2020.06.30 07:25:09 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2020.06.30 07:25:09 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nzh] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:25:09 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nfr] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:25:09 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nde] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:25:09 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nel] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:25:09 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nit] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:25:09 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nja] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:25:09 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nko] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:25:09 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin German Pack [l10nde] should package its dependencies.
+2020.06.30 07:25:10 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin Japanese Pack [l10nja] should package its dependencies.
+2020.06.30 07:25:10 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin Traditional Chinese Language Pack [l10nzhtw] should package its dependencies.
+2020.06.30 07:25:10 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin Italian Pack [l10nit] should package its dependencies.
+2020.06.30 07:25:10 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin Greek Pack [l10nel] should package its dependencies.
+2020.06.30 07:25:12 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Developer edition
+2020.06.30 07:25:12 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2020.06.30 07:54:10 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2020.06.30 07:54:10 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2020.06.30 07:54:10 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2020.06.30 07:54:11 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2020.06.30 07:55:31 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2020.06.30 07:55:31 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2020.06.30 07:55:31 INFO  ce[][o.s.c.e.CoreExtensionsLoader] Loaded core extensions: developer-edition, developer-scanner, developer-server, license
+2020.06.30 07:55:31 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2020.06.30 07:55:31 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020.06.30 07:55:31 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020.06.30 07:55:31 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 07:55:32 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2020.06.30 07:55:32 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:postgresql://sonardb:5432/sonar
+2020.06.30 07:55:33 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2020.06.30 07:55:33 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2020.06.30 07:55:33 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nzh] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:55:33 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nfr] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:55:33 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nde] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:55:33 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nel] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:55:33 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nit] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:55:33 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nja] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:55:33 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nko] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:55:33 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin German Pack [l10nde] should package its dependencies.
+2020.06.30 07:55:34 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin Japanese Pack [l10nja] should package its dependencies.
+2020.06.30 07:55:34 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin Traditional Chinese Language Pack [l10nzhtw] should package its dependencies.
+2020.06.30 07:55:34 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin Italian Pack [l10nit] should package its dependencies.
+2020.06.30 07:55:34 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin Greek Pack [l10nel] should package its dependencies.
+2020.06.30 07:55:36 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Developer edition
+2020.06.30 07:55:36 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2020.06.30 07:56:11 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2020.06.30 07:56:11 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2020.06.30 07:56:11 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2020.06.30 07:56:12 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2020.06.30 07:57:20 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2020.06.30 07:57:20 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2020.06.30 07:57:21 INFO  ce[][o.s.c.e.CoreExtensionsLoader] Loaded core extensions: developer-edition, developer-scanner, developer-server, license
+2020.06.30 07:57:21 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2020.06.30 07:57:21 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020.06.30 07:57:21 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020.06.30 07:57:21 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 07:57:22 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2020.06.30 07:57:22 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:postgresql://sonardb:5432/sonar
+2020.06.30 07:57:23 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2020.06.30 07:57:23 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2020.06.30 07:57:23 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nzh] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:57:23 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nfr] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:57:23 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nde] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:57:23 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nel] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:57:23 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nit] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:57:23 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nja] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:57:23 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nko] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 07:57:23 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin German Pack [l10nde] should package its dependencies.
+2020.06.30 07:57:23 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin Japanese Pack [l10nja] should package its dependencies.
+2020.06.30 07:57:24 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin Traditional Chinese Language Pack [l10nzhtw] should package its dependencies.
+2020.06.30 07:57:24 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin Italian Pack [l10nit] should package its dependencies.
+2020.06.30 07:57:24 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin Greek Pack [l10nel] should package its dependencies.
+2020.06.30 07:57:26 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Developer edition
+2020.06.30 07:57:26 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2020.06.30 09:31:31 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2020.06.30 09:31:31 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2020.06.30 09:31:31 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2020.06.30 09:31:32 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2020.06.30 09:33:45 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2020.06.30 09:33:45 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2020.06.30 09:33:45 INFO  ce[][o.s.c.e.CoreExtensionsLoader] Loaded core extensions: developer-edition, developer-scanner, developer-server, license
+2020.06.30 09:33:46 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2020.06.30 09:33:46 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020.06.30 09:33:46 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020.06.30 09:33:46 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 09:33:47 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2020.06.30 09:33:47 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:postgresql://sonardb:5432/sonar
+2020.06.30 09:33:48 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2020.06.30 09:33:48 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2020.06.30 09:33:48 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nzh] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 09:33:48 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nfr] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 09:33:48 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nde] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 09:33:48 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nel] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 09:33:48 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nit] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 09:33:48 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nja] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 09:33:48 INFO  ce[][o.s.c.p.PluginInfo] Plugin [l10nko] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2020.06.30 09:33:48 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin German Pack [l10nde] should package its dependencies.
+2020.06.30 09:33:48 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin Japanese Pack [l10nja] should package its dependencies.
+2020.06.30 09:33:49 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin Traditional Chinese Language Pack [l10nzhtw] should package its dependencies.
+2020.06.30 09:33:49 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin Italian Pack [l10nit] should package its dependencies.
+2020.06.30 09:33:49 WARN  ce[][o.s.c.p.PluginLoader] API compatibility mode is no longer supported. In case of error, plugin Greek Pack [l10nel] should package its dependencies.
+2020.06.30 09:33:51 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Developer edition
+2020.06.30 09:33:51 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2020.06.30 09:56:45 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2020.06.30 09:56:45 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2020.06.30 09:56:45 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2020.06.30 09:56:45 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2020.06.30 09:57:16 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2020.06.30 09:57:16 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2020.06.30 09:57:16 INFO  ce[][o.s.c.e.CoreExtensionsLoader] Loaded core extensions: developer-edition, developer-scanner, developer-server, license
+2020.06.30 09:57:17 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2020.06.30 09:57:17 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020.06.30 09:57:17 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020.06.30 09:57:17 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 09:57:18 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2020.06.30 09:57:18 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:postgresql://sonardb:5432/sonar
+2020.06.30 09:57:19 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2020.06.30 09:57:19 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2020.06.30 09:57:19 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Developer edition
+2020.06.30 09:57:19 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2020.06.30 10:03:55 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2020.06.30 10:03:55 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2020.06.30 10:03:55 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2020.06.30 10:03:56 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2020.06.30 10:04:24 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2020.06.30 10:04:24 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2020.06.30 10:04:25 INFO  ce[][o.s.c.e.CoreExtensionsLoader] Loaded core extensions: developer-edition, developer-scanner, developer-server, license
+2020.06.30 10:04:25 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2020.06.30 10:04:25 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020.06.30 10:04:25 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020.06.30 10:04:25 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 10:04:26 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2020.06.30 10:04:26 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:postgresql://sonardb:5432/sonar
+2020.06.30 10:04:27 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2020.06.30 10:04:27 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2020.06.30 10:04:28 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Developer edition
+2020.06.30 10:04:28 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2020.06.30 10:05:26 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=jgerges | type=REPORT | id=AXMEsDrOS45ymhwH9eu- | submitter=admin
+2020.06.30 10:05:26 INFO  ce[AXMEsDrOS45ymhwH9eu-][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=22ms
+2020.06.30 10:05:26 INFO  ce[AXMEsDrOS45ymhwH9eu-][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=6ms
+2020.06.30 10:05:27 INFO  ce[AXMEsDrOS45ymhwH9eu-][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=21ms
+2020.06.30 10:05:27 INFO  ce[AXMEsDrOS45ymhwH9eu-][o.s.c.t.s.ComputationStepExecutor] Execute DB migrations for current project | status=SUCCESS | time=6ms
+2020.06.30 10:05:27 INFO  ce[AXMEsDrOS45ymhwH9eu-][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+2020.06.30 10:05:27 INFO  ce[AXMEsDrOS45ymhwH9eu-][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=89ms
+2020.06.30 10:05:27 INFO  ce[AXMEsDrOS45ymhwH9eu-][o.s.c.t.s.ComputationStepExecutor] Initialize | status=FAILED | time=3ms
+2020.06.30 10:05:27 INFO  ce[AXMEsDrOS45ymhwH9eu-][o.s.c.t.p.a.p.PostProjectAnalysisTasksExecutor] Webhooks | globalWebhooks=0 | projectWebhooks=0 | status=SUCCESS | time=6ms
+2020.06.30 10:05:27 INFO  ce[AXMEsDrOS45ymhwH9eu-][o.s.c.t.p.a.p.PostProjectAnalysisTasksExecutor] Pull Request decoration | status=SUCCESS | time=0ms
+2020.06.30 10:05:27 INFO  ce[AXMEsDrOS45ymhwH9eu-][o.s.c.t.CeWorkerImpl] Executed task | project=jgerges | type=REPORT | id=AXMEsDrOS45ymhwH9eu- | submitter=admin | status=FAILED | time=558ms
+2020.06.30 10:49:07 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2020.06.30 10:49:07 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2020.06.30 10:49:07 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2020.06.30 10:49:07 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2020.06.30 10:50:44 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2020.06.30 10:50:44 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2020.06.30 10:50:44 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2020.06.30 10:50:44 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020.06.30 10:50:44 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020.06.30 10:50:44 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020.06.30 10:50:44 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 10:50:45 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2020.06.30 10:50:45 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:postgresql://sonardb:5432/sonar
+2020.06.30 10:50:46 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2020.06.30 10:50:46 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2020.06.30 10:50:46 INFO  ce[][o.s.c.c.CePluginRepository] Loaded plugin SonarC# [csharp]
+2020.06.30 10:50:46 INFO  ce[][o.s.c.c.CePluginRepository] Loaded plugin SonarPython [python]
+2020.06.30 10:50:46 INFO  ce[][o.s.c.c.CePluginRepository] Loaded plugin SonarJava [java]
+2020.06.30 10:50:46 INFO  ce[][o.s.c.c.CePluginRepository] Loaded plugin Flex [flex]
+2020.06.30 10:50:46 INFO  ce[][o.s.c.c.CePluginRepository] Loaded plugin SonarQube :: Plugins :: SCM :: Git [scmgit]
+2020.06.30 10:50:46 INFO  ce[][o.s.c.c.CePluginRepository] Loaded plugin SonarXML [xml]
+2020.06.30 10:50:46 INFO  ce[][o.s.c.c.CePluginRepository] Loaded plugin SonarPHP [php]
+2020.06.30 10:50:46 INFO  ce[][o.s.c.c.CePluginRepository] Loaded plugin SonarTS [typescript]
+2020.06.30 10:50:46 INFO  ce[][o.s.c.c.CePluginRepository] Loaded plugin SonarQube :: Plugins :: SCM :: SVN [scmsvn]
+2020.06.30 10:50:46 INFO  ce[][o.s.c.c.CePluginRepository] Loaded plugin SonarJS [javascript]
+2020.06.30 10:50:47 INFO  ce[][o.s.c.q.PurgeCeActivities] Delete the Compute Engine tasks created before Thu Jan 02 10:50:47 UTC 2020
+2020.06.30 10:50:47 INFO  ce[][o.s.c.q.PurgeCeActivities] Delete the Scanner contexts tasks created before Tue Jun 02 10:50:47 UTC 2020
+2020.06.30 10:50:47 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2020.06.30 10:54:41 INFO  ce[][o.s.p.StopWatcher] Stopping process
+2020.06.30 10:54:41 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2020.06.30 10:54:41 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Waiting for workers to finish in-progress tasks
+2020.06.30 10:54:42 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2020.06.30 10:57:11 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2020.06.30 10:57:11 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2020.06.30 10:57:12 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2020.06.30 10:57:12 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020.06.30 10:57:12 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020.06.30 10:57:12 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 10:57:13 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2020.06.30 10:57:13 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:postgresql://sonardb:5432/sonar
+2020.06.30 10:57:14 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2020.06.30 10:57:14 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2020.06.30 10:57:15 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2020.06.30 10:57:15 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2020.06.30 10:57:54 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2020.06.30 10:57:54 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2020.06.30 10:57:54 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2020.06.30 10:57:55 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2020.06.30 10:58:57 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2020.06.30 10:58:57 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2020.06.30 10:58:57 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2020.06.30 10:58:57 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020.06.30 10:58:57 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020.06.30 10:58:57 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 10:58:58 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2020.06.30 10:58:58 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:postgresql://sonardb:5432/sonar
+2020.06.30 10:58:59 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2020.06.30 10:58:59 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2020.06.30 10:59:00 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2020.06.30 10:59:00 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2020.06.30 11:00:36 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=jgerges | type=REPORT | id=AXME4rvkLws4tjNLlYny | submitter=admin
+2020.06.30 11:00:36 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=20ms
+2020.06.30 11:00:36 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=8ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=21ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Execute DB migrations for current project | status=SUCCESS | time=8ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=100ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Verify billing | status=SUCCESS | time=0ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=30 | status=SUCCESS | time=42ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=4ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=318ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=11ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=0ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Detect file moves | status=SUCCESS | time=0ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=3 | status=SUCCESS | time=8ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=15ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=4ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=7ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=1ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Copy custom measures | status=SUCCESS | time=5ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=2ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=1ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=13ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=1ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=2ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=3ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=4ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=246ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=0ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=32ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=6ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=1ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=1ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=37ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=4ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=1ms
+2020.06.30 11:00:37 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=49 | status=SUCCESS | time=15ms
+2020.06.30 11:00:38 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=959 | status=SUCCESS | time=267ms
+2020.06.30 11:00:38 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=14ms
+2020.06.30 11:00:38 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=0ms
+2020.06.30 11:00:38 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Persist issues | inserts=40 | updates=0 | merged=0 | untouched=0 | status=SUCCESS | time=92ms
+2020.06.30 11:00:38 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=4ms
+2020.06.30 11:00:38 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=10ms
+2020.06.30 11:00:38 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=154ms
+2020.06.30 11:00:38 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+2020.06.30 11:00:38 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=6ms
+2020.06.30 11:00:38 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=19ms
+2020.06.30 11:00:38 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=81ms
+2020.06.30 11:00:39 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=SUCCESS | time=623ms
+2020.06.30 11:00:39 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Send issue notifications | newIssuesNotifs=0 | newIssuesDeliveries=0 | myNewIssuesNotifs=0 | myNewIssuesDeliveries=0 | changesNotifs=0 | changesDeliveries=0 | status=SUCCESS | time=5ms
+2020.06.30 11:00:39 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Publish task results | status=SUCCESS | time=0ms
+2020.06.30 11:00:39 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.s.ComputationStepExecutor] Trigger refresh of Portfolios and Applications | status=SUCCESS | time=0ms
+2020.06.30 11:00:39 INFO  ce[AXME4rvkLws4tjNLlYny][o.s.c.t.CeWorkerImpl] Executed task | project=jgerges | type=REPORT | id=AXME4rvkLws4tjNLlYny | submitter=admin | status=SUCCESS | time=2775ms
+2020.06.30 11:04:19 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2020.06.30 11:04:19 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2020.06.30 11:04:19 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2020.06.30 11:04:19 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2020.06.30 11:05:37 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2020.06.30 11:05:37 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2020.06.30 11:05:38 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2020.06.30 11:05:38 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020.06.30 11:05:38 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020.06.30 11:05:38 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 11:05:39 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2020.06.30 11:05:39 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:postgresql://sonardb:5432/sonar
+2020.06.30 11:05:40 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2020.06.30 11:05:40 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2020.06.30 11:05:41 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2020.06.30 11:05:41 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2020.06.30 12:17:07 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=thrift | type=REPORT | id=AXMFKM2CR_XykqsqLGYe | submitter=admin
+2020.06.30 12:17:07 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=11ms
+2020.06.30 12:17:07 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=8ms
+2020.06.30 12:17:07 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=0ms
+2020.06.30 12:17:07 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Execute DB migrations for current project | status=SUCCESS | time=5ms
+2020.06.30 12:17:07 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=91ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Verify billing | status=SUCCESS | time=0ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=3 | status=SUCCESS | time=35ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=3ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=314ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=38ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=0ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Detect file moves | status=SUCCESS | time=0ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=0 | status=SUCCESS | time=2ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=11ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=3ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=4ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=1ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Copy custom measures | status=SUCCESS | time=3ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=1ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=1ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=13ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=1ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=2ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=2ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=3ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=162ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=1ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=19ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=7ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=5ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=1ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=19ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=6ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=1ms
+2020.06.30 12:17:08 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=50 | status=SUCCESS | time=70ms
+2020.06.30 12:17:09 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=125 | status=SUCCESS | time=66ms
+2020.06.30 12:17:09 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=1ms
+2020.06.30 12:17:09 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=1ms
+2020.06.30 12:17:09 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Persist issues | cacheSize=914 bytes | inserts=2 | updates=0 | merged=0 | status=SUCCESS | time=11ms
+2020.06.30 12:17:09 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=4ms
+2020.06.30 12:17:09 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=6ms
+2020.06.30 12:17:09 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=93ms
+2020.06.30 12:17:09 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+2020.06.30 12:17:09 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=17ms
+2020.06.30 12:17:09 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=10ms
+2020.06.30 12:17:09 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=40ms
+2020.06.30 12:17:09 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=SUCCESS | time=193ms
+2020.06.30 12:17:09 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Send issue notifications | newIssuesNotifs=0 | newIssuesDeliveries=0 | myNewIssuesNotifs=0 | myNewIssuesDeliveries=0 | changesNotifs=0 | changesDeliveries=0 | status=SUCCESS | time=3ms
+2020.06.30 12:17:09 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Publish task results | status=SUCCESS | time=0ms
+2020.06.30 12:17:09 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.s.ComputationStepExecutor] Trigger refresh of Portfolios and Applications | status=SUCCESS | time=0ms
+2020.06.30 12:17:09 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.p.a.p.PostProjectAnalysisTasksExecutor] Webhooks | globalWebhooks=0 | projectWebhooks=0 | status=SUCCESS | time=5ms
+2020.06.30 12:17:09 INFO  ce[AXMFKM2CR_XykqsqLGYe][o.s.c.t.CeWorkerImpl] Executed task | project=thrift | type=REPORT | id=AXMFKM2CR_XykqsqLGYe | submitter=admin | status=SUCCESS | time=1974ms
+2020.06.30 12:19:41 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=fapp | type=REPORT | id=AXMFKyXWR_XykqsqLGYl | submitter=admin
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=4ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=2ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Execute DB migrations for current project | status=SUCCESS | time=1ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=10ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Verify billing | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=3 | status=SUCCESS | time=4ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=2ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=125ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=3ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Detect file moves | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=0 | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=1ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Copy custom measures | status=SUCCESS | time=1ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=1ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=1ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=1ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=26ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=1ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=1ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=1ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=12ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=2ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=41 | status=SUCCESS | time=6ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=105 | status=SUCCESS | time=20ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Persist issues | cacheSize=4 KB | inserts=12 | updates=0 | merged=0 | status=SUCCESS | time=7ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=1ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=3ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=30ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=3ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=3ms
+2020.06.30 12:19:41 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=16ms
+2020.06.30 12:19:42 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=SUCCESS | time=261ms
+2020.06.30 12:19:42 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Send issue notifications | newIssuesNotifs=0 | newIssuesDeliveries=0 | myNewIssuesNotifs=0 | myNewIssuesDeliveries=0 | changesNotifs=0 | changesDeliveries=0 | status=SUCCESS | time=5ms
+2020.06.30 12:19:42 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Publish task results | status=SUCCESS | time=0ms
+2020.06.30 12:19:42 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.s.ComputationStepExecutor] Trigger refresh of Portfolios and Applications | status=SUCCESS | time=0ms
+2020.06.30 12:19:42 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.p.a.p.PostProjectAnalysisTasksExecutor] Webhooks | globalWebhooks=0 | projectWebhooks=0 | status=SUCCESS | time=2ms
+2020.06.30 12:19:42 INFO  ce[AXMFKyXWR_XykqsqLGYl][o.s.c.t.CeWorkerImpl] Executed task | project=fapp | type=REPORT | id=AXMFKyXWR_XykqsqLGYl | submitter=admin | status=SUCCESS | time=610ms
+2020.06.30 12:23:13 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2020.06.30 12:23:13 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2020.06.30 12:23:13 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2020.06.30 12:23:13 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2020.06.30 12:23:37 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2020.06.30 12:23:37 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2020.06.30 12:23:38 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2020.06.30 12:23:38 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020.06.30 12:23:38 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020.06.30 12:23:38 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 12:23:39 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2020.06.30 12:23:39 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:postgresql://sonardb:5432/sonar
+2020.06.30 12:23:40 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2020.06.30 12:23:40 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2020.06.30 12:23:41 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2020.06.30 12:23:41 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2020.06.30 12:50:37 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2020.06.30 12:50:37 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2020.06.30 12:50:37 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2020.06.30 12:50:37 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2020.06.30 12:52:51 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2020.06.30 12:52:51 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2020.06.30 12:52:52 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2020.06.30 12:52:52 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020.06.30 12:52:52 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020.06.30 12:52:52 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020.06.30 12:52:53 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2020.06.30 12:52:53 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:postgresql://sonardb:5432/sonar
+2020.06.30 12:52:54 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2020.06.30 12:52:54 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2020.06.30 12:52:55 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2020.06.30 12:52:55 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational

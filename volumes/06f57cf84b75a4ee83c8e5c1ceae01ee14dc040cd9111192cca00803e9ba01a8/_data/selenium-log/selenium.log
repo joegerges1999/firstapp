@@ -1,0 +1,10 @@
+2020-06-26 06:44:45,610 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+2020-06-26 06:44:45,611 INFO supervisord started with pid 13
+2020-06-26 06:44:46,613 INFO spawned: 'xvfb' with pid 22
+2020-06-26 06:44:46,614 INFO spawned: 'selenium-standalone' with pid 23
+2020-06-26 06:44:47,110 INFO success: xvfb entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-06-26 06:44:47,110 INFO success: selenium-standalone entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+06:44:47.199 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
+2020-06-26 06:44:47.266:INFO::main: Logging initialized @635ms to org.seleniumhq.jetty9.util.log.StdErrLog
+06:44:47.569 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+06:44:47.951 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
