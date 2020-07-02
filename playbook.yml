@@ -1,0 +1,65 @@
+- hosts: 127.0.0.1
+  connection: local
+
+  tasks:
+  - name: backing up the sonar extensions
+    copy:
+      src: /data/docker/volumes/sonarqube_extensions
+      dest: /data/jgerges/backups/sonarqube_extensions_backup
+      backup: yes
+    delegate_to: 127.0.0.1
+
+  - name: backing up postgresql
+    copy:
+      src: /data/docker/volumes/postgresql
+      dest: /data/jgerges/backups/postgresql_backup
+      backup: yes
+    delegate_to: 127.0.0.1
+
+  - name: backing up postgresql data
+    copy:
+      src: /data/docker/volumes/postgresql_data
+      dest: /data/jgerges/backups/postgresql_data_backup
+      backup: yes
+    delegate_to: 127.0.0.1
+
+  - name: tearing down the services
+    docker_compose:
+      project_src: .
+      state: absent
+
+  - name: clearing the extensions volume
+    docker_volume:
+      name: sonarqube_extensions
+      state: absent
+
+  - name: creating new extensions volume
+    docker_volume:
+      name: sonarqube_extensions
+  
+  - name: granting permissions for volumes
+    file:
+      path: /data/docker/volumes/
+      state: directory
+      mode: '777'
+      recurse: yes
+  
+  - name: waking the services up
+    environment:
+      SONAR_IMAGE: sonarqube:latest
+    docker_compose:
+      project_src: .
+  
+  - name: waiting for sonarqube service to become available
+    uri:
+      url: http://localhost:9000/sonar/setup
+      status_code: 200
+    register: result
+    until: result.status == 200
+    retries: 30
+    delay: 5
+
+  - name: upgrading database
+    uri:
+      url: http://jgerges/sonar/api/system/migrate_db
+      method: POST
