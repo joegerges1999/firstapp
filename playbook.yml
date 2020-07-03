@@ -1,7 +1,12 @@
 - hosts: 127.0.0.1
   connection: local
 
-  tasks:
+  tasks:  
+  - name: tearing down the services
+    docker_compose:
+      project_src: .
+      state: absent
+  
   - name: backing up the sonar extensions
     copy:
       src: /data/docker/volumes/sonarqube_extensions
@@ -9,33 +14,18 @@
       backup: yes
     delegate_to: 127.0.0.1
 
-  - name: backing up postgresql
+  - name: creating postgresql data dump
+    shell: docker exec sonar_postgres pg_dump -U sonar sonar > sonar.sql
+
+  - name: copying sonar.sql dump file to a backup folder
     copy:
-      src: /data/docker/volumes/postgresql
-      dest: /data/jgerges/backups/postgresql_backup
-      backup: yes
-    delegate_to: 127.0.0.1
+      src: /data/docker/volumes/postgresql_data/_data/sonar.sql
+      dest: /data/jgerges/backups
 
-  - name: backing up postgresql data
-    copy:
-      src: /data/docker/volumes/postgresql_data
-      dest: /data/jgerges/backups/postgresql_data_backup
-      backup: yes
-    delegate_to: 127.0.0.1
-
-  - name: tearing down the services
-    docker_compose:
-      project_src: .
+  - name: clearing the extensions volume 
+    file:
+      path: /data/docker/volumes/sonarqube_extensions/_data/*
       state: absent
-
-  - name: clearing the extensions volume
-    docker_volume:
-      name: sonarqube_extensions
-      state: absent
-
-  - name: creating new extensions volume
-    docker_volume:
-      name: sonarqube_extensions
   
   - name: granting permissions for volumes
     file:
@@ -46,7 +36,7 @@
   
   - name: waking the services up
     environment:
-      SONAR_IMAGE: sonarqube:latest
+      SONAR_IMAGE: sonarqube:$SONAR_VERSION
     docker_compose:
       project_src: .
   
