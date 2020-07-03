@@ -1,12 +1,21 @@
 - hosts: 127.0.0.1
   connection: local
+  vars:
+    sonar_version: "{{ sonar_version }}"
+    regex_pattern: "{{ regex_patern }}"
 
   tasks:  
-  - name: tearing down the services
-    docker_compose:
-      project_src: .
-      state: absent
+  - name: tearing down the sonarqube services
+    docker_container:
+      name: sonarqube
+      state: absent 
   
+  - name: making sure the postgresql container is active for backup
+    docker_container:
+      name: sonardb
+      state: started 
+      image: postgres
+
   - name: backing up the sonar extensions
     copy:
       src: /data/docker/volumes/sonarqube_extensions
@@ -15,18 +24,22 @@
     delegate_to: 127.0.0.1
 
   - name: creating postgresql data dump
-    shell: docker exec sonar_postgres pg_dump -U sonar sonar > sonar.sql
+    shell: docker exec sonar_postgres pg_dump -U sonar sonar > /data/jgerges/backups/sonar.sql
+    delegate_to: 127.0.0.1
 
-  - name: copying sonar.sql dump file to a backup folder
-    copy:
-      src: /data/docker/volumes/postgresql_data/_data/sonar.sql
-      dest: /data/jgerges/backups
-
-  - name: clearing the extensions volume 
+  - name: find unsupported plugins
+    find:
+      paths: /data/docker/volumes/sonarqube_extensions/_data/plugins
+      patterns: '{{ regex_patern }}'
+      use_regex: yes
+    register: plugins_to_delete
+   
+  - name: delete files
     file:
-      path: /data/docker/volumes/sonarqube_extensions/_data/*
+      path: "{{ item.path }}"
       state: absent
-  
+    with_items: "{{ plugins_to_delete.files }}"
+   
   - name: granting permissions for volumes
     file:
       path: /data/docker/volumes/
@@ -36,10 +49,10 @@
   
   - name: waking the services up
     environment:
-      SONAR_IMAGE: sonarqube:$SONAR_VERSION
+      SONAR_IMAGE: sonarqube:{{ sonar_version }}
     docker_compose:
       project_src: .
-  
+ 
   - name: waiting for sonarqube service to become available
     uri:
       url: http://localhost:9000/sonar/setup
